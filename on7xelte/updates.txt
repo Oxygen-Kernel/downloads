@@ -1,0 +1,31 @@
+::COM.OXYGEN.KERNELUPDATER::
+
+<on7xelte>
+#define min_ver* = 1.0
+#define android_versions = Nougat, Oreo
+#define build_bases = TW, AOSP
+
++kernel {
+        _base:=TW
+        _api:=Nougat
+        _version:=3.0
+        _zipname:=Oxygen-Kernel-on7xelte-v3.0-TW.zip
+        _httplink:=https://github.com/Oxygen-Kernel/downloads/raw/master/on7xelte/Oxygen-Kernel-on7xelte-v3.0-TW.zip
+        _md5:=c8cdb61e67f164c079432444cdb9a482
+        _testbuild:=false
+}
+
++kernel {
+        _base:=AOSP
+        _api:=Oreo
+        _version:=3.0
+        _zipname:=Oxygen-Kernel-on7xelte-v3.0-AOSP.zip
+        _httplink:=https://github.com/Oxygen-Kernel/downloads/raw/master/on7xelte/Oxygen-Kernel-on7xelte-v3.0-AOSP.zip
+        _md5:=NULL
+        _testbuild:=false
+}
+
+<changelog>
+ NULL
+</changelog>
+</on7xelte>
