@@ -1,31 +1,36 @@
 ::COM.OXYGEN.KERNELUPDATER::
-
+ 
 <on7xelte>
 #define min_ver* = 1.0
 #define android_versions = Nougat, Oreo
 #define build_bases = TW, AOSP
-
+ 
 +kernel {
         _base:=TW
         _api:=Nougat
-        _version:=3.0
-        _zipname:=Oxygen-Kernel-on7xelte-v3.0-TW.zip
-        _httplink:=https://github.com/Oxygen-Kernel/downloads/raw/master/on7xelte/Oxygen-Kernel-on7xelte-v3.0-TW.zip
-        _md5:=c8cdb61e67f164c079432444cdb9a482
+        _version:=3.1
+        _zipname:=Oxygen-Kernel-on7xelte-v3.1-TW.zip
+        _httplink:=https://github.com/Oxygen-Kernel/on7xelte/releases/download/3.1/Oxygen-Kernel-on7xelte-v3.1-TW.zip
+        _md5:=900105e51fbe38b2af9d8a55787bb658
         _testbuild:=false
 }
-
+ 
 +kernel {
         _base:=AOSP
         _api:=Oreo
-        _version:=3.0
-        _zipname:=Oxygen-Kernel-on7xelte-v3.0-AOSP.zip
-        _httplink:=https://github.com/Oxygen-Kernel/downloads/raw/master/on7xelte/Oxygen-Kernel-on7xelte-v3.0-AOSP.zip
-        _md5:=NULL
+        _version:=3.1
+        _zipname:=Oxygen-Kernel-on7xelte-v3.1-AOSP.zip
+        _httplink:=https://github.com/Oxygen-Kernel/on7xelte/releases/download/3.1/Oxygen-Kernel-on7xelte-v3.1-AOSP.zip
+        _md5:=4ce198023f785618ea63e189bbc7c9bf
         _testbuild:=false
 }
-
+ 
 <changelog>
- NULL
+ * Linux 3.18.106
+ * Removed zzmove governor
+ * Added wireguard VPN support(Google for more details)
+ * Fixed Big Cluster tunables getting lost when turned off
+ * Updated some cpufreq governing policy
+ * Disabled broken Boeffla Wakelock Blocker(AOSP only)
 </changelog>
 </on7xelte>
